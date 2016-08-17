@@ -16,9 +16,9 @@ RUN git clone --recursive https://github.com/cuberite/cuberite.git /tmp/cuberite
     && cp -r /tmp/cuberite/Server /opt/cuberite                                  \
     && rm -fr /tmp/cuberite
 
-#COPY settings.ini /opt/cuberite/
-#COPY motd.txt /opt/cuberite/
-#COPY webadmin.ini /opt/cuberite/
+COPY settings.ini /opt/cuberite/
+COPY motd.txt /opt/cuberite/
+COPY webadmin.ini /opt/cuberite/
 
 EXPOSE 25565
 
